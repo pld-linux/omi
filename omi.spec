@@ -1,4 +1,5 @@
 Summary:	OMI - Open Media Interface
+Summary(pl):	OMI - Interfejs Open Media
 Name:		omi
 Version:	0.1.0
 Release:	1
@@ -7,7 +8,7 @@ Group:		X11/Applications/Multimedia
 Group(de):	X11/Applikationen/Multimedia
 Group(pl):	X11/Aplikacje/Multimedia
 Source0:	http://www.linuxvideo.org/oms/data/%{name}-%{version}.tar.gz
-URL:		http://www.linuxvideo.org/%{name}
+URL:		http://www.linuxvideo.org/oms/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildRequires:	oms-devel
 BuildRequires:	gtk+-devel
@@ -15,10 +16,13 @@ BuildRequires:	gdk-pixbuf-devel
 BuildRequires:	bison
 BuildRequires:	flex
 
-%define _prefix /usr/X11R6
+%define		_prefix		/usr/X11R6
 
 %description
 OMI - Open Media Interface.
+
+%description -l pl
+OMI - Interfejs do Open Media System.
 
 %prep
 %setup  -q
