@@ -9,12 +9,12 @@ Group(de):	X11/Applikationen/Multimedia
 Group(pl):	X11/Aplikacje/Multimedia
 Source0:	http://www.linuxvideo.org/oms/data/%{name}-%{version}.tar.gz
 URL:		http://www.linuxvideo.org/oms/
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildRequires:	oms-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	gdk-pixbuf-devel
 BuildRequires:	bison
 BuildRequires:	flex
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 
@@ -44,5 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
+%doc *.gz
 %{_mandir}/man1/*
 %{_datadir}/oms
