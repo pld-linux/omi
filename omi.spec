@@ -8,11 +8,11 @@ Group:		X11/Applications/Multimedia
 Source0:	http://www.linuxvideo.org/oms/data/%{name}-%{version}.tar.gz
 # Source0-md5:	b9b540a57daad608b2a8158f8207963f
 URL:		http://www.linuxvideo.org/oms/
-BuildRequires:	oms-devel
-BuildRequires:	gtk+-devel
-BuildRequires:	gdk-pixbuf-devel
 BuildRequires:	bison
 BuildRequires:	flex
+BuildRequires:	gdk-pixbuf-devel
+BuildRequires:	gtk+-devel
+BuildRequires:	oms-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
@@ -32,7 +32,8 @@ OMI - Interfejs do Open Media System.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
