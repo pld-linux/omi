@@ -26,7 +26,7 @@ OMI - Interfejs do Open Media System.
 %setup  -q
 
 %build
-%configure 
+%configure
 %{__make}
 
 %install
@@ -34,7 +34,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README ChangeLog 
+gzip -9nf README ChangeLog
 
 %clean
 rm -rf $RPM_BUILD_ROOT
