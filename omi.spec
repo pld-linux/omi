@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://www.linuxvideo.org/oms/data/%{name}-%{version}.tar.gz
+# Source0-md5:	b9b540a57daad608b2a8158f8207963f
 URL:		http://www.linuxvideo.org/oms/
 BuildRequires:	oms-devel
 BuildRequires:	gtk+-devel
