@@ -1,5 +1,5 @@
 Summary:	OMI - Open Media Interface
-Summary(pl):	OMI - Interfejs Open Media
+Summary(pl.UTF-8):   OMI - Interfejs Open Media
 Name:		omi
 Version:	0.1.0
 Release:	1
@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 OMI - Open Media Interface.
 
-%description -l pl
+%description -l pl.UTF-8
 OMI - Interfejs do Open Media System.
 
 %prep
