@@ -1,5 +1,5 @@
 Summary:	OMI - Open Media Interface
-Summary(pl.UTF-8):   OMI - Interfejs Open Media
+Summary(pl.UTF-8):	OMI - Interfejs Open Media
 Name:		omi
 Version:	0.1.0
 Release:	1
